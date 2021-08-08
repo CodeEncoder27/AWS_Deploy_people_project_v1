@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>People Counter</h1>
+    <h2 id="count">0</h2>
+    <button id="increments" onclick="countincrement()">Count</button>
+    <button id="decrements" onclick="countdecrement()">Decrement</button>
+    <button type="submit" id="save-btn" onclick="save()">Save</button>
+    <p id="savedvalues">Previous entries: </p>
+    <script src="peoplecount.js"></script> 
     </div>
   );
 }
